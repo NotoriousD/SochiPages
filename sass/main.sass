@@ -1,0 +1,302 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	font-weight: 300
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.inner
+	max-width: 1200px
+	margin: 0 auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.fix-mnu.active-fix
+	left: 0
+
+.toggle-nav
+	display: block
+	margin: 0 auto
+	background-color: #fff
+	padding: 10px 30px
+	border-radius: 10px
+	text-align: center
+	text-transform: uppercase
+	color: #000
+	border: 0
+	outline: none
+	display: none
+
+.fix-mnu
+	z-index: 100
+	width: 271px
+	height: 500px
+	background-color: #ffffff
+	position: fixed
+	left: -271px
+	top: 20%
+	transition: all .3s
+	border: 1px solid #c1c1c1
+	.mnu-menu
+		position: relative
+	.toggle-fix
+		width: 36px
+		height: 40px
+		background-color: #fafafa
+		font-size: 17px
+		font-weight: 600
+		text-align: center
+		outline: none
+		line-height: 35px
+		position: absolute
+		right: -36px
+		border: 0
+		top: 30px
+		&:hover
+			background-color: #f1f1f1
+	.fix-logo
+		display: block
+		text-align: center
+		padding: 40px 0
+		border-bottom: 1px solid #e8e8e8
+		img
+			width: 80%
+	ul
+		padding: 0
+		margin: 0
+		li
+			display: block
+			text-align: center
+			width: 100%
+			padding: 15px 0
+			a
+				font-size: 12px
+				color: #000
+				text-decoration: none
+				text-transform: uppercase
+				letter-spacing: 1.92px
+				&:hover
+					color: #b39269
+
+.c-header
+	background-image: url(/img/top_bg.png)
+	padding-top: 100px
+	background-position: 0 0
+	background-repeat: no-repeat
+	.logo
+		display: block
+		text-align: center
+		margin-bottom: 80px
+	nav
+		.top-mnu
+			margin: 0
+			padding: 0
+			text-align: center
+			li
+				display: inline-block
+				padding: 15px
+				a
+					text-align: center
+					text-transform: uppercase
+					font-size: 15px
+					color: #000
+					display: block
+					text-decoration: none
+					&:hover
+						color: #b39269
+
+.c-munch
+	background-image: url(/img/top.png)
+	padding: 150px 0
+	.descr
+		width: 346px
+		height: 242px
+		background-color: #fff
+		margin: 0 auto
+		padding: 40px 0
+		h1
+			text-align: center
+			font-weight: 300
+			text-transform: uppercase
+			font-size: 33px
+			line-height: 55px
+
+.c-local
+	margin: 0
+	padding: 0
+	text-align: center
+	li
+		display: inline-block
+		padding: 25px
+		text-align: center
+		p
+			span
+				text-transform: uppercase
+				letter-spacing: -0.3px
+
+.about-descr
+	padding: 85px 0
+	h1
+		font-size: 40px
+		font-weight: 300
+		line-height: 69px
+		text-align: center
+		text-transform: uppercase
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 79px
+			height: 2px
+			background-color: #000000
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -10px
+	p
+		font-size: 23px
+		letter-spacing: -0.3px
+		line-height: 40px
+		text-align: center
+.c-totsamiy
+	.blocks
+		margin: 0
+		padding: 0
+		text-align: center
+		li
+			display: inline-block
+			list-style-type: none
+			padding: 35px 0
+			border: 1px solid #d4d4d4
+			width: 277px
+			height: 210px
+			vertical-align: bottom
+			margin-left: -6px
+			text-align: center
+			p
+				text-transform: uppercase
+				font-size: 15px
+				letter-spacing: -0.6px
+				margin-bottom: 0
+				span
+					text-transform: uppercase
+					display: block
+				&:last-child
+					text-transform: lowercase
+	.banner
+		background-image: url(/img/mid_bg.png)
+		padding-top: 220px
+		.banner-text
+			width: 574px
+			background-color: #fff
+			color: #212121
+			padding: 30px 15px
+			h1
+				text-align: center
+				text-transform: uppercase
+				font-weight: 300
+				font-size: 38px
+				line-height: 60px
+				letter-spacing: -0.6px
+			p
+				font-size: 21px
+				line-height: 33px
+				letter-spacing: -0.6px
+				text-align: left
+			span
+				font-size: 17px
+				line-height: 26px
+				letter-spacing: -0.6px
+				text-align: left
+
+.block-menu
+	text-align: center
+	img
+		display: inline-block
+		margin-left: -6px
+
+.c-comments
+	background-image: url(/img/com-bg.png)
+	padding: 91px 0
+	a
+		display: block
+		width: 480px
+		margin: 0 auto
+		border: 3px solid #ffffff
+		padding: 20px 20px
+		text-align: center
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: -0.75px
+		span
+			font-size: 24px
+			line-height: 24px
+			font-weight: 600
+			letter-spacing: -0.85px
+		img
+			float: left
+			margin-left: 20px
+
+.footer
+	padding: 40px 0
+	p
+		line-height: 8
+
+
+
+		
+
+@import "media" 
