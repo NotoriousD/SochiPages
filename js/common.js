@@ -21,6 +21,23 @@ $(function() {
 		]
 	});
 
+	$('.top_slider').lightSlider({
+		item: 2,
+		pager: false,
+		responsive: [
+			{
+				breakpoint: 960,
+				settings: {
+					item: 1
+				}
+			}
+		]
+	});
+
+	$('.resta-img').hover(function(){
+		$(this).find('div').slideToggle(200);
+	});
+
 
 	$("form").validate({
 		messages: {
